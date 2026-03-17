@@ -1,7 +1,7 @@
 # 🗺 Notable Development Roadmap
 
 ## Phase 1 - Foundation (MVP)
-- [ ] Setup Flutter project
+- [/] Setup Flutter project
 - [ ] Create basic app layout
 - [ ] Bottom navigation bar
 - [ ] Notes screen
