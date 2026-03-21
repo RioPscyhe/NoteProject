@@ -4,7 +4,7 @@
 - To build a simple productive all in one notes app for students, workers, and people
 
 ## 🚀Core Features (Phase 1)
-- Notes (Note-taking)
+- Notes (Note-taking) 
 - Calendar 
 - Timer
 - Clock
