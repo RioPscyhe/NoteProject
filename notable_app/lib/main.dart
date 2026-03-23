@@ -75,7 +75,12 @@ class NotesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("Notes Screen"),
+      child: Text("Notes Screen",
+      style: TextStyle(
+        fontSize: 24,
+        fontFamily: 'ComicNeue',
+      ),
+    )
     );
   }
 }
@@ -86,7 +91,12 @@ class TodoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("To-Do Screen"),
+      child: Text("To-Do Screen", 
+      style: TextStyle(
+        fontSize: 24,
+        fontFamily: 'ComicNeue',
+      ),
+    )
     );
   }
 }
@@ -97,7 +107,12 @@ class CalendarScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("Calendar Screen"),
+      child: Text("Calendar Screen",
+      style: TextStyle(
+        fontSize: 24,
+        fontFamily: 'ComicNeue',
+      ),
+    )
     );
   }
 }
@@ -108,7 +123,12 @@ class TimerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("Timer Screen"),
+      child: Text("Timer Screen",
+      style: TextStyle(
+        fontSize: 24,
+        fontFamily: 'ComicNeue',
+      ),
+    )
     );
   }
 }
