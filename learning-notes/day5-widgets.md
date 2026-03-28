@@ -1,4 +1,4 @@
-# Day 5 - Statless widget and Hot Restart
+# Day 5 - Stateless widget and Hot Restart
 
 Things I learned:
 - Stateless Widgets = widgets that contains data that doesn't change after initialization
