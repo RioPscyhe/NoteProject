@@ -47,10 +47,7 @@ class _MainNavigationState extends State<MainNavigation> {
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
         items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.note),
-            label: 'Notes',
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.note), label: 'Notes'),
           BottomNavigationBarItem(
             icon: Icon(Icons.check_circle),
             label: 'To-Do',
@@ -59,10 +56,7 @@ class _MainNavigationState extends State<MainNavigation> {
             icon: Icon(Icons.calendar_today),
             label: 'Calendar',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.timer),
-            label: 'Timer',
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.timer), label: 'Timer'),
         ],
       ),
     );
@@ -74,13 +68,28 @@ class NotesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("Notes Screen",
-      style: TextStyle(
-        fontSize: 24,
-        fontFamily: 'ComicNeue',
+    return Scaffold(
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Notes Screen",
+              style: TextStyle(fontSize: 24, fontFamily: 'ComicNeue'),
+            ),
+            Image(image: AssetImage('assets/note-bg.avif')),
+          ],
+        ),
       ),
-    )
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(const SnackBar(content: Text('Add note tapped')));
+        },
+        tooltip: 'Add note',
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
@@ -91,12 +100,10 @@ class TodoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("To-Do Screen", 
-      style: TextStyle(
-        fontSize: 24,
-        fontFamily: 'ComicNeue',
+      child: Text(
+        "To-Do Screen",
+        style: TextStyle(fontSize: 24, fontFamily: 'ComicNeue'),
       ),
-    )
     );
   }
 }
@@ -107,12 +114,10 @@ class CalendarScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("Calendar Screen",
-      style: TextStyle(
-        fontSize: 24,
-        fontFamily: 'ComicNeue',
+      child: Text(
+        "Calendar Screen",
+        style: TextStyle(fontSize: 24, fontFamily: 'ComicNeue'),
       ),
-    )
     );
   }
 }
@@ -123,12 +128,10 @@ class TimerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("Timer Screen",
-      style: TextStyle(
-        fontSize: 24,
-        fontFamily: 'ComicNeue',
+      child: Text(
+        "Timer Screen",
+        style: TextStyle(fontSize: 24, fontFamily: 'ComicNeue'),
       ),
-    )
     );
   }
 }
